@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+:root{--bg:#0c1019;--ink:#f6f4ee;--muted:#aeb8c6;--accent:#9ed9ed;--line:rgba(255,255,255,.23)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer}.site-header{position:relative;z-index:10;text-align:center;padding:26px 20px 16px}.brand{display:inline-block;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,5vw,4.4rem);letter-spacing:-.07em;line-height:1.1}.nav{display:flex;justify-content:center;gap:clamp(18px,3.5vw,48px);margin:22px auto 0;flex-wrap:wrap}.nav a{font-weight:600;font-size:.91rem;letter-spacing:.015em;padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border .2s}.nav a:hover,.nav a.active{border-color:currentColor;color:var(--accent)}.home{height:100svh;min-height:620px;display:flex;flex-direction:column;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 40% 20%,#6b283e 0%,#20192a 42%,#080d18 100%)}.home:before{content:'';position:absolute;z-index:-2;inset:0;background-image:linear-gradient(90deg,rgba(9,10,20,.55),rgba(10,11,20,.05) 58%,rgba(10,11,20,.09)),url('assets/cosmic.webp');background-repeat:no-repeat;background-position:center,right 38%;background-size:cover,auto 115%;filter:saturate(1.07)}.home:after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.46),transparent 28%,transparent 70%,rgba(0,0,0,.62))}.home .site-header{padding-top:34px}.home-bottom{margin-top:auto;padding:30px 24px 39px;text-align:center}.release-name{font-family:'Space Grotesk';font-size:clamp(1.35rem,3vw,2.1rem);font-weight:600;letter-spacing:-.045em}.release-meta{text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;margin-top:6px;color:#e2dfdd}.content-page{min-height:100vh}.content-page .site-header{border-bottom:1px solid var(--line)}.container{width:min(1120px,calc(100% - 64px));margin:0 auto}.page-content{padding:clamp(48px,8vw,100px) 0}.music-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,7vw,100px);align-items:start}.cover{display:block;width:100%;box-shadow:0 18px 65px #0005}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:var(--muted);font-size:.72rem;font-weight:700;margin:0 0 18px}.heading{font-family:'Space Grotesk';font-size:clamp(2.8rem,6vw,5.4rem);line-height:1;letter-spacing:-.07em;font-weight:600;margin:0 0 17px}.subline{color:var(--muted);margin:0 0 34px}.tracks{list-style:none;counter-reset:song;padding:0;margin:26px 0 36px}.tracks li{counter-increment:song;display:grid;grid-template-columns:2.1rem 1fr;gap:9px;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.04rem}.tracks li:before{content:counter(song,decimal-leading-zero);font-size:.75rem;color:var(--muted);padding-top:4px}.action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border:1px solid var(--ink);padding:12px 29px;border-radius:100px;font-size:.86rem;font-weight:700;letter-spacing:.025em;transition:.2s}.action:hover{background:var(--ink);color:var(--bg)}.plain-title{font-family:'Space Grotesk';font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-.065em;font-weight:600;line-height:1.1;margin:0 0 32px}.quiet{color:var(--muted);font-size:1rem;line-height:1.65}.link-stack{max-width:600px;margin:42px auto 0;border-top:1px solid var(--line)}.link-row{display:flex;justify-content:space-between;align-items:center;padding:21px 3px;border-bottom:1px solid var(--line)}.link-row span:last-child{font-size:.76rem;color:var(--muted)}.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:center}.contact-art{width:100%;max-height:600px;object-fit:cover}.contact-form{display:grid;gap:18px}.contact-form label{font-size:.82rem;color:var(--muted);display:grid;gap:7px}.contact-form input,.contact-form textarea{width:100%;background:transparent;border:1px solid var(--line);padding:12px 14px;color:var(--ink);border-radius:0;outline-offset:3px}.contact-form textarea{min-height:150px;resize:vertical}.contact-form button:disabled{opacity:.55;cursor:not-allowed}.pending{color:var(--muted);font-size:.78rem}.video-empty{border-top:1px solid var(--line);padding:30px 0;max-width:700px}.placeholder-card{aspect-ratio:16/9;background:linear-gradient(120deg,#162339,#381d32);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}.footer{color:var(--muted);padding:34px 0;text-align:center;font-size:.72rem}.back{display:inline-block;margin-bottom:30px;color:var(--muted);font-size:.85rem}.back:hover{color:var(--ink)}@media(max-width:740px){.home{min-height:600px}.home:before{background-position:center,center 55%;background-size:cover,auto 100%}.site-header{padding:24px 16px 12px}.home .site-header{padding-top:26px}.brand{font-size:clamp(2rem,8.5vw,3.3rem)}.nav{gap:17px;margin-top:18px}.nav a{font-size:.86rem}.container{width:calc(100% - 42px)}.music-layout,.two-cols{grid-template-columns:1fr;gap:36px}.cover{max-width:560px}.page-content{padding:42px 0 65px}.heading{font-size:3.5rem}.contact-art{max-height:460px}.home-bottom{padding-bottom:28px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* v2: edge-to-edge lunar homepage, preserving the original photograph's proportions. */
+.home { background:#070b17; }
+.home:before { background-image:url('assets/lunar-jellyfish.webp'); background-size:cover; background-position:center center; filter:none; }
+.home:after {background:linear-gradient(180deg,rgba(3,7,17,.55) 0%,rgba(3,7,17,.10) 25%,transparent 62%,rgba(3,7,17,.50) 100%)}
+.home-bottom { padding-bottom:clamp(30px,5vh,60px) }
+.release-name {font-size:clamp(1rem,1.9vw,1.4rem);font-weight:500;letter-spacing:.005em;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.release-separator {padding:0 .18em;opacity:.8}
+.cover {aspect-ratio:1 / 1;height:auto;object-fit:contain;align-self:start}
+.music-layout {align-items:start}
+.music-layout .tracks {margin-top:28px}
+.listen-layout {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,7vw,100px);align-items:start}
+.listen-cover {width:100%}
+.listen-layout .link-stack {margin:10px 0 0;max-width:none}
+@media(max-width:740px){.home:before{background-size:cover;background-position:29% center}.listen-layout{grid-template-columns:1fr;gap:35px}.listen-cover{max-width:560px}.release-name{font-size:.96rem}}
+
+
+/* v3 — restrained original-photo homepage; genuine image height, no cropping. */
+:root {--accent:#f6f4ee}
+body {font-family:Eurostile,Microgramma,"Arial",sans-serif}
+.brand {display:inline-flex;align-items:baseline;justify-content:center;gap:clamp(.5rem,1.25vw,1.35rem);font-family:Eurostile,Microgramma,"Arial",sans-serif;font-size:inherit;letter-spacing:normal;white-space:nowrap;font-weight:900;font-style:italic;text-transform:uppercase;line-height:1}
+.brand-the {font-size:clamp(.78rem,2.8vw,2.35rem);letter-spacing:-.045em}
+.brand-main {font-size:clamp(1.35rem,6.2vw,5.8rem);letter-spacing:-.075em}
+.nav a,.release-name {font-family:Eurostile,Microgramma,Arial,sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.nav a {font-size:clamp(.7rem,1.25vw,.94rem)}
+.photo-home {position:relative;width:100%;min-height:0;background:#100b19;line-height:0}
+.hero-original {display:block;width:100%;height:auto;object-fit:contain}
+.photo-home .site-header {position:absolute;z-index:2;top:0;left:0;right:0;padding:clamp(20px,3.5vw,58px) 10px 0;line-height:1.2;text-shadow:0 2px 14px rgba(0,0,0,.62)}
+.photo-home .nav {margin-top:clamp(17px,2.1vw,32px);gap:clamp(15px,3vw,48px)}
+.photo-home .nav a:hover {color:#fff;opacity:.75}
+.photo-home .home-bottom {position:absolute;bottom:0;left:0;right:0;z-index:2;margin:0;padding:clamp(24px,4vw,66px) 14px clamp(25px,4vw,70px);line-height:1.3;background:linear-gradient(to top,rgba(0,0,0,.6),transparent)}
+.photo-home .release-name {margin:0;font-size:clamp(.82rem,1.8vw,1.5rem);letter-spacing:.12em;font-weight:700}
+/* Music: align album art's bottom edge with the Listen / Buy button. */
+.music-layout .cover {width:100%;height:auto;max-width:380px;aspect-ratio:1/1;object-fit:contain}
+@media (min-width:741px) {.music-layout {grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:clamp(40px,7vw,90px)}}
+@media (max-width:740px) {.brand {gap:.35rem}.brand-the {font-size:clamp(.58rem,2.9vw,.9rem)}.brand-main{font-size:clamp(1rem,5.8vw,2rem)}.photo-home .site-header{padding-top:23px}.photo-home .nav{gap:15px;margin-top:17px}.photo-home .home-bottom{padding-bottom:30px}.music-layout .cover{max-width:380px}}
+
+/* v4 — unify all site lettering and top-align the small THE. */
+:root { --site-type: Eurostile, Microgramma, "Arial", sans-serif; }
+html, body, button, input, textarea, select, .brand, .nav a,
+.heading, .plain-title, .release-name, .release-meta,
+.tracks, .tracks li, .tracks li::before, .action,
+.link-row, .link-row span, .eyebrow, .subline, .quiet,
+.pending, .back, .footer, .contact-form label,
+.contact-form input, .contact-form textarea, .placeholder-card {
+  font-family: var(--site-type);
+}
+.brand { align-items: flex-start; }
+.brand-the { align-self: flex-start; line-height: 1; }
+.brand-main { line-height: 1; }
+.heading, .plain-title { letter-spacing: -.045em; font-weight: 700; }
+.nav a { letter-spacing: .055em; }
+.tracks li { letter-spacing: .005em; }
+@media(max-width:740px) {
+  .brand { align-items: flex-start; }
+}
+
+/* v5 — Google Fonts / OFL: one consistent, publicly reproducible family.
+   The main wordmark uses the real Bold Italic font, rather than a browser-sheared Roman face. */
+:root { --site-type: 'Chakra Petch', 'Arial', sans-serif; }
+body, .brand, .brand-the, .brand-main, .nav a, .heading, .plain-title,
+.release-name, .release-meta, .tracks, .tracks li, .tracks li::before,
+.action, .link-row, .eyebrow, .subline, .quiet, .pending, .back, .footer,
+.contact-form label, .placeholder-card {font-family:var(--site-type)}
+.brand {gap:clamp(.10rem,.38vw,.43rem);align-items:flex-start;line-height:1;}
+.brand-the {font-size:clamp(.78rem,2.8vw,2.35rem);font-weight:700;font-style:italic;letter-spacing:-.065em;line-height:1;position:relative;top:-.045em;}
+.brand-main {font-weight:700;font-style:italic;letter-spacing:-.062em;line-height:1;}
+.nav a {font-weight:600;letter-spacing:.07em}
+.heading, .plain-title {font-weight:700;letter-spacing:-.03em}
+@media(max-width:740px){
+ .brand{gap:clamp(.075rem,.33vw,.18rem)}
+ .brand-the{font-size:clamp(.58rem,2.9vw,.9rem)}
+}
+
+/* v6 — signed-off Eurostile outline SVG logo; Urbanist across all live type. */
+:root { --site-type: 'Urbanist', Arial, sans-serif; }
+html, body, button, input, textarea, select {font-family:var(--site-type)}
+.brand {display:inline-block;line-height:0;letter-spacing:normal;font-size:inherit;max-width:min(96vw,1100px);vertical-align:top;}
+.brand-logo {display:block;width:min(88vw,980px);height:auto;max-width:100%;} 
+.photo-home .site-header .brand-logo {width:min(88vw,980px);}
+.nav a, .heading, .plain-title, .release-name, .release-meta, .tracks, .tracks li, .tracks li::before, .action, .link-row, .link-row span, .eyebrow, .subline, .quiet, .pending, .back, .footer, .contact-form label, .contact-form input, .contact-form textarea, .placeholder-card {font-family:var(--site-type)}
+.release-name em {font-style:italic;}
+@media(max-width:740px){.brand-logo,.photo-home .site-header .brand-logo{width:min(94vw,980px)}}
+
+/* Contact form feedback */
+.form-status{margin:0;min-height:1.4em;color:#d2e9df;font-size:.85rem;line-height:1.5}
+.form-status:empty{min-height:0}
+.form-status.is-error{color:#ffbeb9}
+.contact-form button{background:transparent;color:var(--ink)}
+.contact-form button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
