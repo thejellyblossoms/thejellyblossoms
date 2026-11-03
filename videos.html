@@ -78,6 +78,14 @@
     @media (max-width: 600px) {
       .photo-home .site-header { padding-top: 16px; }
     }
+
+    .featured-video { max-width: 960px; margin: 0 auto; }
+    .featured-video h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.2; }
+    .featured-video h2 span { font-size: .65em; font-weight: 400; color: var(--muted); }
+    .featured-video .quiet { margin: 0 0 24px; }
+    .video-player { width: 100%; aspect-ratio: 16 / 9; background: #000; }
+    .video-player iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .video-watch-link { margin: 24px 0 0; }
 </style>
 </head>
 <body class="content-page">
@@ -137,9 +145,23 @@
 </header>
 <main class="container page-content">
 <h1 class="plain-title">Videos</h1>
-<div class="video-empty">
-<p class="quiet">Coming soon.</p>
-</div>
+<section class="featured-video" aria-labelledby="windstorm-title">
+  <h2 id="windstorm-title">Windstorm <span>(with intro)</span></h2>
+  <p class="quiet">An outdoor performance beneath the cherry blossoms, filmed in April 2026.</p>
+  <div class="video-player">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/q5FW7DvRMYo"
+      title="The Jellyblossoms — Windstorm (with intro)"
+      width="960"
+      height="540"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="video-watch-link"><a class="action" href="https://youtu.be/q5FW7DvRMYo" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></p>
+</section>
 </main>
 <footer class="footer">
     <nav class="social-links" aria-label="Footer social media">
