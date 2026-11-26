@@ -58,6 +58,15 @@
         <a href="gallery-photo-01-full.png" download="The-Jellyblossoms-01.png">Download image</a>
       </figcaption>
     </figure>
+    <figure>
+      <a class="gallery-photo-link" href="gallery-photo-02.jpg" data-gallery-open aria-label="View full-size photograph">
+        <img class="gallery-photo" src="gallery-photo-02.jpg" width="2048" height="1538" alt="Mizue waves beside Tyler in a sunlit garden." loading="lazy" decoding="async"/>
+      </a>
+      <figcaption class="gallery-caption">
+        <a href="gallery-photo-02.jpg" data-gallery-open>View full size</a>
+        <a href="gallery-photo-02.jpg" download="The-Jellyblossoms-02.jpg">Download image</a>
+      </figcaption>
+    </figure>
   </div>
 </main>
 <footer class="footer">
@@ -108,7 +117,7 @@
 
 <dialog class="gallery-viewer" aria-label="Full-size photograph" id="gallery-viewer">
   <button class="gallery-close" type="button" aria-label="Close photograph">×</button>
-  <img alt="Black-and-white portrait of Mizue holding a mug beside Tyler playing acoustic guitar."/>
+  <img alt=""/>
 </dialog>
 <script>
   (() => {
@@ -120,6 +129,7 @@
       link.addEventListener('click', event => {
         if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
+        image.alt = link.closest('figure').querySelector('img').alt;
         image.src = link.href;
         previousOverflow = document.body.style.overflow;
         document.body.style.overflow = 'hidden';
